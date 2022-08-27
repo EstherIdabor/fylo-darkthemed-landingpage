@@ -163,10 +163,15 @@ a {
   box-shadow: 5px 5px 10px var(--clr-darkblue-500);
   border-radius: 3px;
   padding: 2rem;
+  z-index: 100;
+}
+.quotes {
+  position: absolute;
+  bottom: -72.5rem;
 }
 .cta-section {
   position: absolute;
-  top: 130rem;
+  top: 135rem;
   left: 19rem;
   z-index: 100;
   background-color: var(--clr-darkblue-400);
@@ -255,4 +260,15 @@ input:where([type="text"], [type="email"]) {
 
 .location-img{
   width: 75px;
+}
+.phone-icon {
+  width: 15px;
+  height: 10px;
+  align-self: center;
+}
+.horizontal-line {
+  cursor: pointer;
+  width: 11rem;
+  height: 1px;
+  background-color: var(--clr-accent-cyan);
 }
