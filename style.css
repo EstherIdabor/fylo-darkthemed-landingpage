@@ -1,0 +1,252 @@
+:root{
+  --clr-darkblue-400: hsl(217, 28%, 15%);
+  --clr-darkblue-500: hsl(218, 28%, 13%);
+  --clr-darkblue-600: hsl(216, 53%, 9%);
+  --clr-dark-blue-700: hsl(219, 30%, 18%);
+
+  --clr-accent-cyan: hsl(176, 68%, 64%);
+  --clr-accent-blue: hsl(198, 60%, 50%);
+
+  --clr-neutral: hsl(0, 0%, 100%);
+
+  --ff-body: 'Open Sans', sans-serif;
+  --ff-heading: 'Raleway', sans-serif;
+
+
+
+}
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*General styling*/
+
+body {
+  background-color: var(--clr-darkblue-500);
+  color: var(--clr-neutral);
+  font-family: var(--ff-body);
+}
+p {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--clr-neutral);
+  opacity: 0.5;
+}
+
+.button{
+  background-image: linear-gradient(to right, var(--clr-accent-cyan), var(--clr-accent-blue));
+  color: var(--clr-neutral);
+  border: 0;
+  padding: 0.5rem 2.5rem;
+  border-radius: 20px;
+}
+
+.header{
+  margin-top: 2rem; 
+}
+
+.head-container {
+  width: min(1400px, 90%);
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list ul {
+  display: flex;
+  gap: 2rem;
+}
+.first-section {
+  padding: 2rem;
+  display: grid;
+   
+  justify-items: center;
+}
+.second-section {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 2rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.third-section {
+  width: min(1110px, 80%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.testimonial {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5rem;
+}
+.testimonial-card {
+  background-color: var(--clr-dark-blue-700);
+  box-shadow: 5px 5px 10px var(--clr-darkblue-500);
+  border-radius: 3px;
+  padding: 2rem;
+}
+.cta-section {
+  position: absolute;
+  top: 130rem;
+  left: 19rem;
+  z-index: 100;
+  background-color: var(--clr-darkblue-400);
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px var(--clr-darkblue-600);
+}
+input:where([type="text"], [type="email"]) {
+  padding: 0.5rem 5rem;
+  border-radius: 20px;
+}
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.last-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+}
+.social-icon {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*Utility classes*/
+.primary-heading {
+  font-family: var(--ff-heading);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+.secondary-heading {
+  font-family: var(--ff-heading);
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.tertiary-heading {
+  font-family: var(--ff-heading);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1;
+}
+.bg-footer {
+  background-color: var(--clr-darkblue-600);
+}
+.container {
+  width: min(1400px, 90%);
+  margin: 0 auto;
+}
+.center-text{
+  text-align: center;
+  width: 50%;
+}
+.box-flex {
+  display: flex;
+  gap: 1rem;
+}
+.flow > * + * {
+  margin-top: var(--flow-spacer, 1.5rem);
+}
+.profile-container{
+  width: 10%;
+}
+.profile-img {
+  border-radius: 25px;
+}
+.meta-data {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.location-img{
+  width: 75px;
+}
