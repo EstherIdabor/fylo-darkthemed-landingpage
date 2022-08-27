@@ -79,9 +79,13 @@ select {
 /*General styling*/
 
 body {
-  background-color: var(--clr-darkblue-500);
+  background-color: var(--clr-dark-blue-700);
   color: var(--clr-neutral);
   font-family: var(--ff-body);
+  background-image: url('images/bg-curvy-desktop.svg');
+  background-repeat: no-repeat;
+  background-position:0 38rem ;
+  /*background-size: 100% 100%;*/
 }
 p {
   opacity: 0.7;
@@ -121,7 +125,6 @@ a {
 .first-section {
   padding: 2rem;
   display: grid;
-   
   justify-items: center;
 }
 .second-section {
@@ -217,6 +220,9 @@ input:where([type="text"], [type="email"]) {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1;
+}
+.bg-body {
+  background-color: var(--clr-darkblue-500);
 }
 .bg-footer {
   background-color: var(--clr-darkblue-600);
